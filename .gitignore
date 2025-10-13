@@ -1,2 +1,5 @@
 # macOS system files
 .DS_Store
+
+# backup imagery file
+sauceballtree.afdesign
