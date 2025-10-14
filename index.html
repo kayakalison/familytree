@@ -9,29 +9,63 @@
       margin: 0;
       height: 100%;
       overflow: hidden;
+      font-family: sans-serif;
     }
+
     #svg-container {
       width: 100vw;
       height: 100vh;
       border: 1px solid #ccc;
+      position: relative;
     }
+
     svg {
       width: 100%;
       height: 100%;
       display: block;
     }
+
+    .email-buttons {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 10;
+    }
+
+    .email-buttons a {
+      display: inline-block;
+      margin-right: 10px;
+      padding: 8px 12px;
+      background-color: #AF4A3B;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 14px;
+      transition: background-color 0.2s ease;
+    }
+
+    .email-buttons a:hover {
+      background-color: #8f3c2f;
+    }
   </style>
 </head>
 <body>
 
-  <div id="svg-container"></div>
+  <div id="svg-container">
+    <!-- Email Buttons -->
+     <div class="email-buttons">
+      <a href="mailto:seattlesauceball@gmail.com?subject=Opt%20Out&body=I%27d%20like%20to%20opt%20out%20of%20the%20Sauceball%20Family%20Tree.%20Please%20remove%20my%20name.%20Thank%20you.">Opt Out</a>
+      <a href="mailto:seattlesauceball@gmail.com?subject=Family%20Tree%20Update&body=I%27ve%20found%20an%20error%20in%20the%20recruitment%20information%20on%20the%20family%20tree.">Update</a>
+    </div>
+
+  </div>
 
   <script>
     fetch('sauceballtree.svg')
       .then(response => response.text())
       .then(svgText => {
         const container = document.getElementById('svg-container');
-        container.innerHTML = svgText;
+        container.innerHTML += svgText;
 
         const svgElement = container.querySelector('svg');
 
