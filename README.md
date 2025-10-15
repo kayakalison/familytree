@@ -42,7 +42,7 @@ To protect individual privacy, the original database has been omitted from this 
 This project includes or builds upon the work of the following:
 
 - **Visual Design and Artwork**  
-  SVG visualization and banner design are © Alison Krauskopf 2025 and released under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
+  SVG visualization and banner design are © 2025 Alison Krauskopf and released under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
 
 - **[anvaka/panzoom](https://github.com/anvaka/panzoom)**  
   Lightweight JavaScript library enabling smooth pan and zoom behavior on DOM and SVG elements.  
