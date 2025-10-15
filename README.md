@@ -25,10 +25,9 @@ Due to the high resolution needed to preserve name readability, the static image
 │ └── sauceballtree.afdesign # Affinity Design 2 file for original graphic
 │ └── familytree.png # Output from Jupyter Notebook file
 │ └── familytree.svg # Output from Jupyter Notebook file
-├── viewer/
-│ └── index.html # Interactive web viewer
-│ └── sauceballtree.svg # Vector image layer
-│ └── background.jpg # Background pixel image layer
+├── index.html # Interactive web viewer
+├── sauceballtree.svg # Vector image layer
+├── background.jpg # Background pixel image layer
 ├── README.md
 ```
 
