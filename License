@@ -1,26 +1,29 @@
-## License
-
-The artwork and visualizations in this repository (e.g., `player_graph.svg`, banner images, and associated design assets) are licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)** license.
-
-[![Creative Commons License](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+The artwork and visualizations in this repository 
+(e.g., `player_graph.svg`, banner images, and associated design assets) 
+are licensed under the **Creative Commons Attribution-NonCommercial-
+ShareAlike 4.0 International (CC BY-NC-SA 4.0)** license.
 
 You are free to:
-
 - **Share** – copy and redistribute the material in any medium or format
 - **Adapt** – remix, transform, and build upon the material
 
 **Under the following terms:**
-
-- **Attribution** – You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+- **Attribution** – You must give appropriate credit, provide a link to 
+  the license, and indicate if changes were made.
 - **NonCommercial** – You may not use the material for commercial purposes.
-- **ShareAlike** – If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+- **ShareAlike** – If you remix, transform, or build upon the material, 
+  you must distribute your contributions under the same license as the original.
 
 Full license text available here:  
-🔗 [https://creativecommons.org/licenses/by-nc-sa/4.0/](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 ---
 
-**Note:** Code in this repository (e.g., Python scripts, HTML, or JavaScript) may be released under a different license. Please refer to individual file headers or LICENSE files where applicable.
+**Note:** Code in this repository (e.g., Python scripts, HTML, or JavaScript) 
+may be released under a different license. Please refer to individual file 
+headers or LICENSE files where applicable.
+
+=======================================================================
 
 CC BY-NC-SA 4.0
 Attribution-NonCommercial-ShareAlike 4.0 International
