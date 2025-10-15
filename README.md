@@ -57,8 +57,4 @@ This project includes or builds upon the work of the following:
   Open-source graph visualization software used for generating the force-directed graph layout via the `sfdp` engine.  
   License: Eclipse Public License 1.0
 
-- **Creative Commons License Assets**  
-  License badges sourced from [CreativeCommons.org](https://creativecommons.org/) for visual indication of CC BY-NC-SA 4.0 licensing.  
-  License: Public Domain / CC License Compatible
-
 If you use or redistribute this project, please follow the respective license terms and provide appropriate credit.
