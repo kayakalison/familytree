@@ -6,7 +6,7 @@ A visualization project that takes a SQL database of an adult softball league pl
 ## Overview
 This project uses player relationship data stored in a SQL database to generate an **undirected spring model** via the [Scalable Force-Directed Placement (sfdp)](https://graphviz.org/) engine in the **GraphViz** library. The output is an `.svg` vector image overlayed upon a pixel .jpg background that was originally visualized as a large-format (3' x 4') banner printed for a reunion event.
 
-Due to the high resolution needed to preserve name readability, the static image file was too large for normal sharing or viewing. This repository provides a **pannable and zoomable** web viewer which used the [anvaka/panzoom](https://github.com/anvaka/panzoom) JavaScript library to create a version of the original banner that is accessible on both desktop and mobile platforms.
+Due to the high resolution needed to preserve name readability, the static image file was too large for normal sharing or viewing. This repository provides a **pannable and zoomable** web viewer which uses the [anvaka/panzoom](https://github.com/anvaka/panzoom) JavaScript library to create a version of the original banner that is accessible on both desktop and mobile platforms.
 
 ## How it Works
 1. **Data Collection:** Player data is stored in a SQL database; database not included to protect individual privacy.
