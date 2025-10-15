@@ -43,11 +43,11 @@ To protect individual privacy, the original database has been omitted from this 
 - [GraphViz](https://graphviz.org/docs/layouts/sfdp/)) – for the Scalable Force-Directed Placement (sfdp) layout engine and powerful graph visualization tools
 - Dana Myers Roberge, Mark Seto, Barry Erickson, and Mia Honts Mar for helping source all of the data – this project wouldn't exist without your input!
 
-## 🙌 Attributions
+## Licensing
 This project includes or builds upon the work of the following:
 
 - **Visual Design and Artwork**  
-  SVG visualization and banner design are © [Alison Krauskopf], and released under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
+  SVG visualization and banner design are © Alison Krauskopf 2025 and released under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
 
 - **[anvaka/panzoom](https://github.com/anvaka/panzoom)**  
   Lightweight JavaScript library enabling smooth pan and zoom behavior on DOM and SVG elements.  
