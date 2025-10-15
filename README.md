@@ -15,11 +15,12 @@ Due to the high resolution needed to preserve name readability, the static image
 4. **Interactive Viewer:** The finished background and vector imagery are rendered in a web page with JavaScript-based pan and zoom (using `panzoom`).
 
 ## Database Schema
+<img width="1252" height="305" alt="dbschema" src="https://github.com/user-attachments/assets/ce7b5bfd-83c6-45c6-b563-c8dcb50764e2" />
 
 ## Project Structure
 ```
 ├── data/
-│ └── sauceball.db # Original SQL database (not included)
+│ └── sauceball.db # Original SQL database (NOT INCLUDED)
 ├── reference/
 │ └── TreeGeneration.ipynb # Jupyter Notebook to build the GraphViz model
 │ └── sauceballtree.afdesign # Affinity Design 2 file for original graphic
