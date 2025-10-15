@@ -38,11 +38,6 @@ To view the interactive banner, open [https://kayakalison.github.io/familytree/i
 ## Notes on Privacy
 To protect individual privacy, the original database has been omitted from this repo and the text in the vector image has been converted to curves (and is therefore not searchable). With these steps taken specific personally identifiable information (PII) is being shared, but an opt-out button is included in case any individual wishes to have their name removed from the tree.
 
-## Acknowledgements
-- [anvaka/panzoom](https://github.com/anvaka/panzoom) – for providing a lightweight and flexible pan & zoom library for interactive SVGs
-- [GraphViz](https://graphviz.org/docs/layouts/sfdp/)) – for the Scalable Force-Directed Placement (sfdp) layout engine and powerful graph visualization tools
-- Dana Myers Roberge, Mark Seto, Barry Erickson, and Mia Honts Mar for helping source all of the data – this project wouldn't exist without your input!
-
 ## Licensing
 This project includes or builds upon the work of the following:
 
@@ -58,3 +53,6 @@ This project includes or builds upon the work of the following:
   License: Eclipse Public License 1.0
 
 If you use or redistribute this project, please follow the respective license terms and provide appropriate credit.
+
+## Acknowledgements
+Thanks to Dana Myers Roberge, Mark Seto, Barry Erickson, Mia Honts Mar and anyone else who chipped in to help source the data that is foundational to this work – this project wouldn't exist without your input!
