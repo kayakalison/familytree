@@ -1,5 +1,44 @@
 # familytree
-Creating a panable and zoomable recruitment tree for an adult softball league
+A visualization project that takes a SQL database of an adult softball league player data and transforms it into an interactive, panable and zoomable recruitment tree suitable for web access from either a desktop or mobile device.
 
-## Introduction
-A sql database of player data was used to build an undirected spring model using the Scalable Force-Directed Placement (sfdp) engine in the GraphViz library in Python. The resultant vector file (.svg) was later prettied up and printed on a 3' x 4' banner for a reunion event. The static file was too large to share normally at the resolution required to read any of the names, however. This project used the [anvaka/panzoom](https://github.com/anvaka/panzoom) approach to create a pannable and scaleable version of the banner that is accessable from both a desktop and mobile device.
+<img width="1382" height="820" alt="demo screenshot" src="https://github.com/user-attachments/assets/8b7d3845-2300-4835-91db-7c9c696f041d" />
+
+## Overview
+This project uses player relationship data stored in a SQL database to generate an **undirected spring model** via the [Scalable Force-Directed Placement (sfdp)](https://graphviz.org/) engine in the **GraphViz** library. The output is an `.svg` vector image overlayed upon a pixel .jpg background that was originally visualized as a large-format (3' x 4') banner printed for a reunion event.
+
+Due to the high resolution needed to preserve name readability, the static image file was too large for normal sharing or viewing. This repository provides a **pannable and zoomable** web viewer which used the [anvaka/panzoom](https://github.com/anvaka/panzoom) JavaScript library to create a version of the original banner that is accessible on both desktop and mobile platforms.
+
+## How it Works
+1. **Data Collection:** Player data is stored in a SQL database; database not included to protect individual privacy.
+2. **Graph Generation:** A python script reads the data and generates an undirected spring model using the `sfdp` layout engine for large-scale graphs; jupyter notebook included in the reference folder.
+3. **Image Generation:** The sfdp vector image was cleaned up manually, the founders and super recruiter circles were exchanged for apple and flower shapes, a title and legend were added, and the resultant imagery was overlaid on top of a background image rendered in Studio Ghibli style.
+4. **Interactive Viewer:** The finished background and vector imagery are rendered in a web page with JavaScript-based pan and zoom (using `panzoom`).
+
+## Database Schema
+
+## Project Structure
+```
+├── data/
+│ └── sauceball.db # Original SQL database (not included)
+├── reference/
+│ └── TreeGeneration.ipynb # Jupyter Notebook to build the GraphViz model
+│ └── sauceballtree.afdesign # Affinity Design 2 file for original graphic
+│ └── familytree.png # Output from Jupyter Notebook file
+│ └── familytree.svg # Output from Jupyter Notebook file
+├── viewer/
+│ └── index.html # Interactive web viewer
+│ └── sauceballtree.svg # Vector image layer
+│ └── background.jpg # Background pixel image layer
+├── README.md
+```
+
+## Live Demo
+To view the interactive banner, open [https://kayakalison.github.io/familytree/index.html](https://kayakalison.github.io/familytree/index.html). No build or server is required—the viewer runs entirely in the browser.
+
+## Notes on Privacy
+To protect individual privacy, the original database has been omitted from this repo and the text in the vector image has been converted to curves (and is therefore not searchable). With these steps taken specific personally identifiable information (PII) is being shared, but an opt-out button is included in case any individual wishes to have their name removed from the tree.
+
+# Acknowledgements
+- [anvaka/panzoom](https://github.com/anvaka/panzoom) – for providing a lightweight and flexible pan & zoom library for interactive SVGs
+- [GraphViz](https://graphviz.org/docs/layouts/sfdp/)) – for the Scalable Force-Directed Placement (sfdp) layout engine and powerful graph visualization tools
+- Dana Myers Roberge, Mark Seto, Barry Erickson, and Mia Honts Mar for helping source all of the data – this project wouldn't exist without your input!
