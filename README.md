@@ -36,13 +36,13 @@ Due to the high resolution needed to preserve name readability, the static image
 To view the interactive banner, open [https://kayakalison.github.io/familytree/index.html](https://kayakalison.github.io/familytree/index.html). No build or server is required—the viewer runs entirely in the browser.
 
 ## Notes on Privacy
-To protect individual privacy, the original database has been omitted from this repo and the text in the vector image has been converted to curves (and is therefore not searchable). With these steps taken specific personally identifiable information (PII) is being shared, but an opt-out button is included in case any individual wishes to have their name removed from the tree.
+To protect individual privacy, the original database has been omitted from this repo and the text in the vector image has been converted to curves (and is therefore not searchable). With these steps taken no specific personally identifiable information (PII) is being shared. Additionally, an opt-out button is included in case any individual wishes to have their name removed from the tree.
 
 ## Licensing
 This project includes or builds upon the work of the following:
 
 - **Visual Design and Artwork**  
-  SVG visualization and banner design are © 2025 Alison Krauskopf and released under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
+  Vector and pixel layer artwork as well as overall banner design are © 2025 Alison Krauskopf and released under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
 
 - **[anvaka/panzoom](https://github.com/anvaka/panzoom)**  
   Lightweight JavaScript library enabling smooth pan and zoom behavior on DOM and SVG elements.  
