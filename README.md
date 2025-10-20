@@ -19,17 +19,29 @@ Due to the high resolution needed to preserve name readability, the static image
 
 ## Project Structure
 ```
-├── data/
+├── data/ (NOT INCLUDED)
 │ └── sauceball.db # Original SQL database (NOT INCLUDED)
 ├── reference/
 │ └── TreeGeneration.ipynb # Jupyter Notebook to build the GraphViz model
+│ └── inputs/
+│   └── appleCurrent.svg # Input needed for Jupyter Notebook file
+│   └── appleHe.svg # Input needed for Jupyter Notebook file
+│   └── appleShe.svg # Input needed for Jupyter Notebook file
+│   └── appleThey.svg # Input needed for Jupyter Notebook file
+│   └── flowerCurrent.svg # Input needed for Jupyter Notebook file
+│   └── flowerHe.svg # Input needed for Jupyter Notebook file
+│   └── flowerShe.svg # Input needed for Jupyter Notebook file
+│   └── flowerThey.svg # Input needed for Jupyter Notebook file
+│ └── outputs/
+│   └── familytree.png # Output from Jupyter Notebook file
+│   └── familytree.svg # Output from Jupyter Notebook file
+│   └── familytree_custom.svg # Output from Jupyter Notebook file
 │ └── sauceballtree.afdesign # Affinity Design 2 file for original graphic
-│ └── familytree.png # Output from Jupyter Notebook file
-│ └── familytree.svg # Output from Jupyter Notebook file
 ├── index.html # Interactive web viewer
 ├── sauceballtree.svg # Vector image layer
 ├── background.jpg # Background pixel image layer
 ├── README.md
+├── License.md
 ```
 
 ## Live Demo
