@@ -10,8 +10,8 @@ Due to the high resolution needed to preserve name readability, the static image
 
 ## How it Works
 1. **Data Collection:** Player data is stored in a SQL database; database not included to protect individual privacy.
-2. **Graph Generation:** A python script reads the data and generates an undirected spring model using the `sfdp` layout engine for large-scale graphs; jupyter notebook included in the reference folder.
-3. **Image Generation:** The sfdp vector image was cleaned up manually, the founders and super recruiter circles were exchanged for apple and flower shapes, a title and legend were added, and the resultant imagery was overlaid on top of a background image rendered in Studio Ghibli style.
+2. **Graph Generation:** `TreeGeneration_main.py` reads the database and generates an undirected spring model using the `sfdp` layout engine, then post-processes the SVG to replace founder and super-recruiter nodes with custom apple and flower shapes. A Jupyter Notebook version is also included in the `reference/` folder.
+3. **Image Generation:** The sfdp vector image was further refined manually — a title and legend were added, and the resultant imagery was overlaid on top of a background image rendered in Studio Ghibli style.
 4. **Interactive Viewer:** The finished background and vector imagery are rendered in a web page with JavaScript-based pan and zoom (using `panzoom`).
 
 ## Database Schema
@@ -20,28 +20,51 @@ Due to the high resolution needed to preserve name readability, the static image
 ## Project Structure
 ```
 ├── data/ (NOT INCLUDED)
-│ └── sauceball.db # Original SQL database (NOT INCLUDED)
+│ └── sauceball.db              # SQLite database (NOT INCLUDED - privacy)
+├── outputs/
+│   └── familytree.png          # PNG preview output
+│   └── familytree.svg          # Raw SVG output from sfdp
+│   └── familytree_custom.svg   # Post-processed SVG with custom nodes
 ├── reference/
-│ └── TreeGeneration.ipynb # Jupyter Notebook to build the GraphViz model
+│ └── TreeGeneration.ipynb      # Jupyter Notebook version of the script
 │ └── inputs/
-│   └── appleCurrent.svg # Input needed for Jupyter Notebook file
-│   └── appleHe.svg # Input needed for Jupyter Notebook file
-│   └── appleShe.svg # Input needed for Jupyter Notebook file
-│   └── appleThey.svg # Input needed for Jupyter Notebook file
-│   └── flowerCurrent.svg # Input needed for Jupyter Notebook file
-│   └── flowerHe.svg # Input needed for Jupyter Notebook file
-│   └── flowerShe.svg # Input needed for Jupyter Notebook file
-│   └── flowerThey.svg # Input needed for Jupyter Notebook file
-│ └── outputs/
-│   └── familytree.png # Output from Jupyter Notebook file
-│   └── familytree.svg # Output from Jupyter Notebook file
-│   └── familytree_custom.svg # Output from Jupyter Notebook file
-│ └── sauceballtree.afdesign # Affinity Design 2 file for original graphic
-├── index.html # Interactive web viewer
-├── sauceballtree.svg # Vector image layer
-├── background.jpg # Background pixel image layer
+│   └── appleCurrent.svg        # Custom node shape for super-recruiters
+│   └── appleHe.svg
+│   └── appleShe.svg
+│   └── appleThey.svg
+│   └── flowerCurrent.svg       # Custom node shape for founders
+│   └── flowerHe.svg
+│   └── flowerShe.svg
+│   └── flowerThey.svg
+│ └── outputs/                  # Reference outputs from Jupyter Notebook
+│   └── familytree.png
+│   └── familytree.svg
+│   └── familytree_custom.svg
+│ └── sauceballtree.afdesign    # Affinity Designer 2 source file
+├── TreeGeneration_main.py      # Main script to generate the family tree
+├── index.html                  # Interactive web viewer
+├── sauceballtree.svg           # Vector image layer
+├── background.jpg              # Background pixel image layer
+├── requirements.txt
 ├── README.md
 ├── License.md
+```
+
+## Setup
+
+Requires **Python 3.12+** and the [Graphviz](https://graphviz.org/) system binaries (installable via `brew install graphviz` on macOS).
+
+```bash
+python3.12 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+To generate the tree (database required):
+
+```bash
+python TreeGeneration_main.py                        # uses data/sauceball.db by default
+python TreeGeneration_main.py --db /path/to/db.db   # specify a custom database path
 ```
 
 ## Live Demo
